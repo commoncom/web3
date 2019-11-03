@@ -1,0 +1,303 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_userAddress",
+				"type": "address"
+			},
+			{
+				"name": "_username",
+				"type": "string"
+			},
+			{
+				"name": "_pwd",
+				"type": "string"
+			}
+		],
+		"name": "createUser",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_userAddr",
+				"type": "address"
+			}
+		],
+		"name": "isLogin",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_userAddr",
+				"type": "address"
+			},
+			{
+				"name": "_userName",
+				"type": "string"
+			},
+			{
+				"name": "_pwd",
+				"type": "string"
+			}
+		],
+		"name": "login",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_userAddr",
+				"type": "address"
+			},
+			{
+				"name": "_userName",
+				"type": "string"
+			},
+			{
+				"name": "_pwd",
+				"type": "string"
+			}
+		],
+		"name": "logout",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_userAddr",
+				"type": "address"
+			},
+			{
+				"name": "_userName",
+				"type": "string"
+			},
+			{
+				"name": "_pwd",
+				"type": "string"
+			},
+			{
+				"name": "_newpwd",
+				"type": "string"
+			}
+		],
+		"name": "updateUser",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "_userAddress",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "_username",
+				"type": "string"
+			}
+		],
+		"name": "CreateUser",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "_userAddr",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "_userName",
+				"type": "string"
+			}
+		],
+		"name": "UpdateUser",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "_userAddr",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "_userName",
+				"type": "string"
+			}
+		],
+		"name": "LoginEvent",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "_userAddr",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "_userName",
+				"type": "string"
+			}
+		],
+		"name": "LoginOutEvent",
+		"type": "event"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_username",
+				"type": "string"
+			}
+		],
+		"name": "findAddrByName",
+		"outputs": [
+			{
+				"name": "userAddress",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_userAddress",
+				"type": "address"
+			}
+		],
+		"name": "findUser",
+		"outputs": [
+			{
+				"name": "userAddresses",
+				"type": "address"
+			},
+			{
+				"name": "username",
+				"type": "string"
+			},
+			{
+				"name": "time",
+				"type": "uint256"
+			},
+			{
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_userAddress",
+				"type": "address"
+			}
+		],
+		"name": "isExitUserAddress",
+		"outputs": [
+			{
+				"name": "isIndeed",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_username",
+				"type": "string"
+			}
+		],
+		"name": "isExitUsername",
+		"outputs": [
+			{
+				"name": "isIndeed",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "isRegister",
+		"outputs": [
+			{
+				"name": "isIndeed",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
