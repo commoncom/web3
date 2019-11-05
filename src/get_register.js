@@ -17,7 +17,7 @@ init().then(con => {
 	// isExitUserAddress(con, addr).then(res => {
 	// 	console.log(res)
 	// });
-	let priKey = "0xFFE962244D80F95197089FE5FF87BE0163D485E7986A7070A498136012FD7B61";
+	let priKey = "0x....";
 	let username = "wu";
 	let pwd = "123";
 	login(con, priKey, addr, username, pwd).then((res, rej) => {
